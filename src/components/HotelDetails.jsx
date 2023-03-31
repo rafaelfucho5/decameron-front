@@ -153,7 +153,7 @@ const HotelDetails = () => {
   return (
     <>    
     <Container>
-      <Button color="danger" onClick={() => {navigate(`/hotels`)}}> Ir atras</Button>
+      <Button color="danger" onClick={() => {navigate(`/`)}}> Ir atras</Button>
       <h2>Detalle del Hotel</h2>
       <Table striped   size="sm">
         <thead>

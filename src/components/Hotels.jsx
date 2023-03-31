@@ -22,7 +22,7 @@ const Hotels = () => {
   const navigate = useNavigate();
 
   const details = (id) => {
-    navigate(`/hotels/${id}`);
+    navigate(`/${id}`);
   };
 
   const formEditHotel = (hotel) => {
