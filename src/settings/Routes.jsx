@@ -7,11 +7,11 @@ import {
 
 const RoutesApp = createBrowserRouter([
     {
-        path: "/hotels",
+        path: "/",
         element: <App />,
     },
     {
-        path: "/hotels/:hotelId",
+        path: "/:hotelId",
         element: <HotelDetails />,
     }
 ])
