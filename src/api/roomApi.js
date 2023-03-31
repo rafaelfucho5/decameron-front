@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const hotelsApi = axios.create({
-    baseURL: 'http://3.227.8.199/api/'
+    baseURL: 'http://3.238.147.160/api/'
 })
 
 export const getRooms = async (hotelId) => {
