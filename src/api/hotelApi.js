@@ -1,20 +1,13 @@
 import axios from 'axios'
 
 const hotelsApi = axios.create({
-    baseURL: 'http://3.227.8.199/api/'
+    baseURL: 'http://3.238.147.160/api/'
 })
 
-// export const getHotels = async () => {
-//     const res = await hotelsApi.get('hotels')
-//     return res.data
-// }
-
-export const getHotels = async () => {
-    const res = await axios.get('hotels', {
-        baseURL: "http://3.227.8.199/api/"
-    })
-    return res.data
-}
+ export const getHotels = async () => {
+     const res = await hotelsApi.get('hotels')
+     return res.data
+ }
 
 export const createHotel = (hotel) => hotelsApi.post('hotels', hotel)
 
