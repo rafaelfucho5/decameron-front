@@ -4,8 +4,15 @@ const hotelsApi = axios.create({
     baseURL: 'http://3.227.8.199/api/'
 })
 
+// export const getHotels = async () => {
+//     const res = await hotelsApi.get('hotels')
+//     return res.data
+// }
+
 export const getHotels = async () => {
-    const res = await hotelsApi.get('hotels')
+    const res = await axios.get('hotels', {
+        baseURL: "http://3.227.8.199/api/"
+    })
     return res.data
 }
 
